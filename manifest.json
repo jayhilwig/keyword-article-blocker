@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Keyword Article Blocker",
+  "version": "0.1.2",
+  "description": "Hide article cards or articles that match keyword/preset rules, with per-site toggle.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Keyword Article Blocker"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["defaults.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

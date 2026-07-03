@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keyword Article Blocker — Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+
+  <body>
+    <header class="options-header">
+      <div class="brand">
+        <img src="brand.png" alt="Keyword Article Blocker logo" />
+      </div>
+
+      <div>
+        <h1>Keyword Article Blocker</h1>
+        <p class="muted subheader">
+          Rules are applied on all sites unless you disable the extension
+          per-site from the popup.
+        </p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Add a keyword rule</h2>
+      <p class="muted">
+        If the keyword appears inside a card or article, the entire card/article
+        gets hidden.
+      </p>
+
+      <div class="row keyword-row">
+        <input id="newKeyword" type="text" placeholder="e.g., Elon Musk" />
+        <button id="addKeyword" class="btn btn-primary" type="button">
+          Add
+        </button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <div>
+          <h2>Rules</h2>
+          <p class="muted">
+            Enable/disable rules, edit patterns, or delete custom rules.
+          </p>
+        </div>
+
+        <button id="resetDefaults" class="btn btn-secondary" type="button">
+          Reset to defaults
+        </button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 72px">On</th>
+            <th>Rule</th>
+            <th>Patterns</th>
+          </tr>
+        </thead>
+        <tbody id="rulesTbody"></tbody>
+      </table>
+    </section>
+
+    <div class="apply-row">
+      <button id="applySettings" class="btn btn-apply" type="button">
+        Apply
+      </button>
+    </div>
+    <div class="close-row">
+      <button id="closeOptions" class="btn btn-close" type="button">
+        Close
+      </button>
+    </div>
+
+    <script src="defaults.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.kab-hidden {
+  display: none !important;
+}
+
+.kab-placeholder {
+  box-sizing: border-box !important;
+  display: block !important;
+  min-height: 92px !important;
+  padding: 12px !important;
+  margin: 10px 0 !important;
+  color: #111827 !important;
+  background: rgba(249, 250, 251, 0.97) !important;
+  border: 1px solid rgba(0, 0, 0, 0.22) !important;
+  border-radius: 8px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  text-decoration: none !important;
+  font:
+    13px/1.35 system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif !important;
+}
+
+.kab-placeholder strong {
+  display: inline-block !important;
+  margin-bottom: 6px !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+.kab-placeholder .kab-meta {
+  margin-bottom: 8px !important;
+  color: #374151 !important;
+  opacity: 1 !important;
+}
+
+.kab-placeholder button,
+.kab-placeholder [data-kab-action] {
+  appearance: auto !important;
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 52px !important;
+  height: auto !important;
+  min-height: 30px !important;
+  padding: 6px 10px !important;
+  margin-top: 8px !important;
+  color: #111827 !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+  font:
+    13px/1.2 system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif !important;
+  text-indent: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  cursor: pointer !important;
+}
+
+.kab-placeholder button:hover,
+.kab-placeholder [data-kab-action]:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
